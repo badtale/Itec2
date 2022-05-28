@@ -1,0 +1,4 @@
+{"_id":{"$oid":"62541cfdda5d856ed4b1a0eb"},"rentStart":1.6496761E+09,"rentEnd":1.6496767E+09,"cost":100.0,"brand":"Opel Astra"}
+{"_id":{"$oid":"62541cfdda5d856ed4b1a0ec"},"rentStart":1.6496747E+09,"rentEnd":1.6496757E+09,"cost":200.0,"brand":"Opel Cadet"}
+{"_id":{"$oid":"62541cfdda5d856ed4b1a0ed"},"rentStart":1.6496737E+09,"rentEnd":1.6496747E+09,"cost":200.0,"brand":"Opel Astra"}
+{"_id":{"$oid":"62541cfdda5d856ed4b1a0ee"},"rentStart":1.6496761E+09,"rentEnd":1.6496767E+09,"cost":150.0,"brand":"Opel Omega"}

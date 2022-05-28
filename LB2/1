@@ -1,0 +1,3 @@
+{"_id":{"$oid":"62541e38da5d856ed4b1a0ef"},"brand":"Opel Astra","yearRelease":1990.0,"mileage":253894.0,"condition":"bad"}
+{"_id":{"$oid":"62541e38da5d856ed4b1a0f0"},"brand":"Opel Cadet","yearRelease":2000.0,"mileage":38753.0,"condition":"normal"}
+{"_id":{"$oid":"62541e38da5d856ed4b1a0f1"},"brand":"Opel Omega","yearRelease":2010.0,"mileage":2894.0,"condition":"good"}

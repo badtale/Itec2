@@ -1,0 +1,16 @@
+db.rent.insertMany( [
+   { "rentStart": 1649676100, "rentEnd": 1649676700, "cost": 100, "brand": "Opel Astra" },
+   { "rentStart": 1649674700, "rentEnd": 1649675700, "cost": 200, "brand": "Opel Cadet" },
+   { "rentStart": 1649673700, "rentEnd": 1649674700, "cost": 200, "brand": "Opel Astra" },
+   { "rentStart": 1649676100, "rentEnd": 1649676700, "cost": 150, "brand": "Opel Omega" }
+]);
+
+db.rent.insertMany( [{ "rentStart": 1649676100, "rentEnd": 1649676700, "cost": 100, "brand": "Opel Astra" },{ "rentStart": 1649674700, "rentEnd": 1649675700, "cost": 200, "brand": "Opel Cadet" },{ "rentStart": 1649673700, "rentEnd": 1649674700, "cost": 200, "brand": "Opel Astra" },{ "rentStart": 1649676100, "rentEnd": 1649676700, "cost": 150, "brand": "Opel Omega" }]);
+
+db.car.insertMany( [
+   { "brand": "Opel Astra", "yearRelease": 1990, "mileage": 253894, "condition": "bad" },
+   { "brand": "Opel Cadet", "yearRelease": 2000, "mileage": 38753, "condition": "normal" },
+   { "brand": "Opel Omega", "yearRelease": 2010, "mileage": 2894, "condition": "good" }
+]);
+
+db.car.insertMany( [{ "brand": "Opel Astra", "yearRelease": 1990, "mileage": 253894, "condition": "bad" },{ "brand": "Opel Cadet", "yearRelease": 2000, "mileage": 38753, "condition": "normal" },{ "brand": "Opel Omega", "yearRelease": 2010, "mileage": 2894, "condition": "good" }]);
