@@ -56,6 +56,20 @@ foreach ($cursor as $item) {
 <!DOCTYPE HTML>
 <html>
  <head>
+    <script>
+
+
+function addData(str) {
+	
+	if (localStorage.TempSave==null){
+		localStorage.setItem("TempSave", str);
+	}else{
+		localStorage.setItem("TempSave", localStorage.TempSave+","+str);
+	}
+	
+	
+}
+ </script>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <title>ЛБ 2(Прибыль)</title>
   <link href="external.css" rel="stylesheet">
@@ -65,10 +79,32 @@ foreach ($cursor as $item) {
 <div class="navigation">
 <form action="money.php" method="post">
 <a style="margin-left: 50px;">Выберите дату:</a><br>
-<input name="dateToShow" style="background-color: #2980b9; border-radius: 10px;" type=date>
+<input name="dateToShow" style="background-color: #2980b9; border-radius: 10px;" onchange="addData(this.value)" type=date>
 <input class="btn third" type="submit" value="Загрузить" />
-
+<span class="custom-dropdown big">
+    <select id="mySelect" name="auditoriumToShow" >    
+        <option  selected="selected" disabled>Saved</option>
+    </select>
+</span>
 </form>
+<script>
+  if (localStorage.getItem('TempSave')!=null){
+	
+	//alert(localStorage.getItem('TempSave'));
+	var arrayOfStrings = localStorage.getItem('TempSave').split(",");
+	//alert(arrayOfStrings);
+	arrayOfStrings.forEach(addDataOption);
+
+  }
+
+function addDataOption(item) {
+	//alert(item);
+var x = document.getElementById("mySelect");
+var option = document.createElement("option");
+option.text = item;
+x.add(option);
+}
+</script>
 <table id="myTable" class="table_dark">
    <?php echo $table; ?>
 </table><br>
